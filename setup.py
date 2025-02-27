@@ -1,14 +1,13 @@
 import setuptools
 
-with open("README.md",'r',encoding="utf8") as f:
+with open("README.md", "r", encoding="utf8") as f:
     long_description = f.read()
-
 
 __version__ = "0.0.0"
 REPO_NAME = "Text_summarization"
-AUTHOR_USER_NAME ="Rishvy"
-SRC_REPO="textSummarization"
-AUTHOR_EMAIL ="rishykttk@gmail.com"
+AUTHOR_USER_NAME = "Rishvy"
+SRC_REPO = "textSummarizer"
+AUTHOR_EMAIL = "rishykttk@gmail.com"
 
 setuptools.setup(
     name=SRC_REPO,
@@ -17,11 +16,11 @@ setuptools.setup(
     author_email=AUTHOR_EMAIL,
     description="A small python package for NLP app",
     long_description=long_description,
-    long_description_content="text/markdown",
+    long_description_content_type="text/markdown",  # ✅ Fixed key
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src")
+    packages=setuptools.find_packages(where="src"),
 )
