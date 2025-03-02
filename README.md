@@ -1,4 +1,4 @@
-# End-to-End Text Summarization Project  
+# End-to-End Text Summarization NLP Project  
 
 This project implements a complete **Text Summarization** pipeline using **Hugging Face Transformers** and **Deep Learning** models. It includes **data processing, model training, evaluation, and deployment** with AWS and CI/CD integration.
 
